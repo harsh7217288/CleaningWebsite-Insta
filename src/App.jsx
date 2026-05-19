@@ -8,7 +8,6 @@ import {
   Shield, 
   Clock, 
   Leaf, 
-  ChevronDown, 
   ArrowRight, 
   Check, 
   Phone, 
@@ -198,7 +197,7 @@ export default function LumiereCleanWebsite() {
     <>
       <header className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
         <div className="container nav-container">
-          <a href="#" className="logo">
+          <a href="/" className="logo">
             <span className="logo-lumiere">Lumière</span>
             <span className="logo-clean">Clean</span>
           </a>
@@ -690,9 +689,9 @@ export default function LumiereCleanWebsite() {
               </div>
               <p style={{ maxWidth: '280px' }}>Premium residential cleaning services designed to bring luxury and peace of mind to your busy life.</p>
               <div className="footer-social">
-                <a href="#" className="social-circle">F</a>
-                <a href="#" className="social-circle">I</a>
-                <a href="#" className="social-circle">G</a>
+                <a href="/" className="social-circle">F</a>
+                <a href="/" className="social-circle">I</a>
+                <a href="/" className="social-circle">G</a>
               </div>
             </div>
             <div className="footer-col reveal" style={{ transitionDelay: '100ms' }}>
@@ -711,8 +710,8 @@ export default function LumiereCleanWebsite() {
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#pricing">Pricing</a></li>
                 <li><a href="#areas">Service Areas</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Blog</a></li>
+                <li><a href="/">Careers</a></li>
+                <li><a href="/">Blog</a></li>
               </ul>
             </div>
             <div className="footer-col reveal" style={{ transitionDelay: '300ms' }}>
@@ -727,8 +726,8 @@ export default function LumiereCleanWebsite() {
           <div className="footer-bottom reveal">
             <div>&copy; {new Date().getFullYear()} Lumière Clean. All rights reserved.</div>
             <div className="footer-bottom-links">
-              <a href="#">Privacy Policy</a>
-              <a href="#">Terms of Service</a>
+              <a href="/">Privacy Policy</a>
+              <a href="/">Terms of Service</a>
             </div>
           </div>
         </div>
