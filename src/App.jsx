@@ -4,6 +4,8 @@ import homeImage from "./images/homepage.jpg";
 import bathroom from "./images/bathrooom.jpg"
 import living from "./images/living.jpg"
 import logo from "./images/ag_cleaning_logo.jpg"
+import professionals from "./images/professionals.png"
+import hour from "./images/24hr.png"
 import { 
   Star, 
   Shield, 
@@ -343,7 +345,7 @@ export default function LumiereCleanWebsite() {
             <div className="alt-row reveal">
               <div className="alt-visual">
                 <img
-                  src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=80"
+                  src={professionals}
                   alt="Professional cleaner at work"
                   style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', borderRadius: 'inherit' }}
                 />
@@ -371,7 +373,7 @@ export default function LumiereCleanWebsite() {
             <div className="alt-row reveal">
               <div className="alt-visual">
                 <img
-                  src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=800&q=80"
+                  src={hour}
                   alt="Sparkling clean bathroom"
                   style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', borderRadius: 'inherit' }}
                 />
