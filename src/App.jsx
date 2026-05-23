@@ -624,7 +624,7 @@ export default function LumiereCleanWebsite() {
             <p>Join 500+ households who trust Lumière Clean every week.</p>
             <div className="cta-buttons">
               <a href="#contact" className="btn-primary">Book Your First Clean</a>
-              <a href="tel:3125550192" className="btn-secondary btn-outline-white">Call Us: (312) 555-0192</a>
+              <a href="tel:7787889271" className="btn-secondary btn-outline-white">Call Us: 778-788-9271</a>
             </div>
           </div>
         </section>
@@ -676,7 +676,7 @@ export default function LumiereCleanWebsite() {
               <p style={{ marginBottom: '40px' }}>Have a question or prefer to book over the phone? Our team is ready to assist you.</p>
               <div className="info-item">
                 <Phone className="info-icon" size={24} />
-                <div><h4>Call Us</h4><p>(312) 555-0192</p></div>
+                <div><h4>Call Us</h4><p>778-788-9271</p></div>
               </div>
               <div className="info-item">
                 <Clock className="info-icon" size={24} />
@@ -734,7 +734,7 @@ export default function LumiereCleanWebsite() {
             <div className="footer-col reveal" style={{ transitionDelay: '300ms' }}>
               <h4>Contact</h4>
               <ul className="footer-links">
-                <li>(312) 555-0192</li>
+                <li>778-788-9271</li>
                 <li>hello@agcleaning.com</li>
                 <li>Serving Vancouver & Surrounding Areas</li>
               </ul>
