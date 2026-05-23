@@ -3,6 +3,7 @@ import './App.css';
 import homeImage from "./images/homepage.jpg";
 import bathroom from "./images/bathrooom.jpg"
 import living from "./images/living.jpg"
+import logo from "./images/ag_cleaning_logo.jpg"
 import { 
   Star, 
   Shield, 
@@ -183,7 +184,7 @@ export default function LumiereCleanWebsite() {
   ];
 
   const faqs = [
-    { q: "Are your cleaners background-checked?", a: "Yes. Every Lumière professional undergoes a full criminal background check, identity verification, and in-person interview before their first booking. We re-screen annually." },
+    { q: "Are your cleaners background-checked?", a: "Yes. Every AG Cleaning professional undergoes a full criminal background check, identity verification, and in-person interview before their first booking. We re-screen annually." },
     { q: "Do I need to be home during the cleaning?", a: "Not at all. Most of our clients provide entry instructions and return to a clean home. We're fully insured for peace of mind." },
     { q: "What products do you use?", a: "We use professional-grade, eco-certified cleaning products that are non-toxic and safe for children, pets, and sensitive surfaces. You can also request fragrance-free options." },
     { q: "How do I pay?", a: "We accept all major credit cards, Apple Pay, and Google Pay. Payment is processed securely after your cleaning is complete." },
@@ -197,10 +198,13 @@ export default function LumiereCleanWebsite() {
     <>
       <header className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
         <div className="container nav-container">
-          <a href="/" className="logo">
-            <span className="logo-lumiere">Lumière</span>
-            <span className="logo-clean">Clean</span>
-          </a>
+         <a href="/" className="logo">
+  <img
+    src={logo}
+    alt="AG Cleaning Services"
+    className="logo-img"
+  />
+</a>
           <nav className="nav-links">
             <a href="#services" className="nav-link">Services</a>
             <a href="#pricing" className="nav-link">Pricing</a>
@@ -385,7 +389,7 @@ export default function LumiereCleanWebsite() {
         <section className="ba-section section-padding">
           <div className="container">
             <div className="text-center reveal">
-              <h2 className="section-header">The Lumière Difference</h2>
+              <h2 className="section-header">AG Cleaning Difference</h2>
               <p className="section-subheader">Drag the slider to see the transformation</p>
             </div>
             <div className="ba-grid">
@@ -483,37 +487,37 @@ export default function LumiereCleanWebsite() {
                 <div className="stars">★★★★★</div>
                 <p className="test-quote">"I've tried four cleaning services. Lumière is the only one I've kept. They remembered my cat's name."</p>
                 <div className="test-author">Sarah M.</div>
-                <div className="test-meta">Homeowner, Chicago · Recurring Clean</div>
+                <div className="test-meta">Homeowner, Vancouver · Recurring Clean</div>
               </div>
               <div className="test-card reveal">
                 <div className="stars">★★★★★</div>
-                <p className="test-quote">"Booked same-day for an Airbnb turnover. Guests left a 5-star review specifically about cleanliness."</p>
+                <p className="test-quote">"Booked same-day for an Richmond turnover. Guests left a 5-star review specifically about cleanliness."</p>
                 <div className="test-author">James T.</div>
-                <div className="test-meta">Airbnb Host, Austin · Airbnb Cleaning</div>
+                <div className="test-meta">Airbnb Host, Austin · Coquitlam Cleaning</div>
               </div>
               <div className="test-card reveal">
                 <div className="stars">★★★★★</div>
                 <p className="test-quote">"They cleaned behind the refrigerator. I've lived here 6 years. No one has ever done that."</p>
                 <div className="test-author">Priya K.</div>
-                <div className="test-meta">Apartment Resident, NYC · Deep Clean</div>
+                <div className="test-meta">Apartment Resident, Langley · Deep Clean</div>
               </div>
               <div className="test-card reveal">
                 <div className="stars">★★★★★</div>
                 <p className="test-quote">"Worth every penny. I get home from work to a clean house and it genuinely changes my mood."</p>
                 <div className="test-author">Daniel R.</div>
-                <div className="test-meta">Professional, San Francisco · Weekly Recurring</div>
+                <div className="test-meta">Professional, North Vancouver · Weekly Recurring</div>
               </div>
               <div className="test-card reveal">
                 <div className="stars">★★★★★</div>
                 <p className="test-quote">"The eco-friendly products were important to me. My toddler plays on these floors. Lumière gets it."</p>
                 <div className="test-author">Amanda L.</div>
-                <div className="test-meta">Parent, Seattle · Eco-Friendly Clean</div>
+                <div className="test-meta">Parent, Surrey · Eco-Friendly Clean</div>
               </div>
               <div className="test-card reveal">
                 <div className="stars">★★★★★</div>
                 <p className="test-quote">"Response was under 2 hours. They came the next morning. That kind of reliability is rare."</p>
                 <div className="test-author">Marcus W.</div>
-                <div className="test-meta">Property Manager, Miami · Move-Out Clean</div>
+                <div className="test-meta">Property Manager, West Vancouver · Move-Out Clean</div>
               </div>
             </div>
           </div>
@@ -558,7 +562,20 @@ export default function LumiereCleanWebsite() {
                 <h2 className="section-header" style={{ fontSize: '48px' }}>We Come to You</h2>
                 <p className="section-subheader" style={{ marginBottom: '32px' }}>Proudly serving the greater metropolitan area and surrounding suburbs.</p>
                 <div className="areas-grid">
-                  {['Chicago', 'Naperville', 'Evanston', 'Oak Park', 'Schaumburg', 'Downers Grove', 'Wheaton', 'Elmhurst', 'Lombard', 'Aurora', 'Joliet', 'Waukegan'].map((city, i) => (
+                  {[
+  'Vancouver',
+  'Burnaby',
+  'Richmond',
+  'Surrey',
+  'Coquitlam',
+  'North Vancouver',
+  'West Vancouver',
+  'Delta',
+  'Langley',
+  'New Westminster',
+  'Maple Ridge',
+  'White Rock'
+].map((city, i) => (
                     <div className="area-item" key={i}>
                       <MapPin className="area-icon" size={18} /> {city}
                     </div>
@@ -667,7 +684,7 @@ export default function LumiereCleanWebsite() {
               </div>
               <div className="info-item">
                 <MapPin className="info-icon" size={24} />
-                <div><h4>Headquarters</h4><p>123 Clean Street, Suite 400<br/>Chicago, IL 60601</p></div>
+                <div><h4>Headquarters</h4><p>123 Clean Street, Suite 400<br/>North Vancouver , IL 60601</p></div>
               </div>
               <div className="badge-insured">
                 <Shield size={20} color="var(--accent-sage)" />
@@ -684,8 +701,8 @@ export default function LumiereCleanWebsite() {
           <div className="footer-grid">
             <div className="footer-col reveal">
               <div className="logo footer-logo">
-                <span className="logo-lumiere">Lumière</span>
-                <span className="logo-clean">Clean</span>
+                <span className="logo-lumiere">AG</span>
+                <span className="logo-clean">Cleaning</span>
               </div>
               <p style={{ maxWidth: '280px' }}>Premium residential cleaning services designed to bring luxury and peace of mind to your busy life.</p>
               <div className="footer-social">
@@ -718,13 +735,13 @@ export default function LumiereCleanWebsite() {
               <h4>Contact</h4>
               <ul className="footer-links">
                 <li>(312) 555-0192</li>
-                <li>hello@lumiereclean.com</li>
-                <li>123 Clean St, Suite 400<br/>Chicago, IL 60601</li>
+                <li>hello@agcleaning.com</li>
+                <li>Serving Vancouver & Surrounding Areas</li>
               </ul>
             </div>
           </div>
           <div className="footer-bottom reveal">
-            <div>&copy; {new Date().getFullYear()} Lumière Clean. All rights reserved.</div>
+            <div>&copy; {new Date().getFullYear()} AG Cleaning. All rights reserved.</div>
             <div className="footer-bottom-links">
               <a href="/">Privacy Policy</a>
               <a href="/">Terms of Service</a>
